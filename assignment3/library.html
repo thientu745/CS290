@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="library.css">
+    </head>
+
+    <body>
+        <h1 class="h1">Exercise Library</h1>
+        <br>
+        <div class="search-container">
+            <form class="form" action="" method="get">
+                <label for="search">Exercise Search:</label>
+                <input type="text" id="search" name="q" placeholder="Enter an exercise">
+                <form>
+                    <label for="filters">Filters:</label>
+                    <select id="filters" name="filters">
+                        <option value="filters">None</option>
+                        <option value="chest">Chest</option>
+                        <option value="back">Back</option>
+                        <option value="legs">Legs</option>
+                        <option value="core">Core</option>
+                    </select>
+                    <button type="submit">Search</button>
+                </form>
+            </form>
+        </div>
+
+        <br>
+
+        <div class="popular-exercises">
+            <h2>Popular Exercises</h2>
+            <ol>
+                <li>Bench Press</li>
+                <li>Back Squat</li>
+                <li>Deadlift</li>
+                <li>Bicep Curl</li>
+                <li>Tricep Extension</li>
+                <li>Bench Press (Duplicated to display vertical list navigation)</li>
+                <li>Back Squat</li>
+                <li>Deadlift</li>
+                <li>Bicep Curl</li>
+                <li>Tricep Extension</li>
+            </ol>
+        </div>
+
+        <div class="popular-muscles">
+            <h2>Popular Muscles</h2>
+            <ol>
+                <li>Chest</li>
+                <li>Back</li>
+                <li>Legs</li>
+                <li>Biceps</li>
+                <li>Triceps</li>
+                <li>Chest (Duplicated to display horizontal list navigation)</li>
+                <li>Back</li>
+                <li>Legs</li>
+                <li>Biceps</li>
+                <li>Triceps</li>
+            </ol>
+        </div>
+
+        <br>
+
+        <div class="sitemap">
+            <h3>Sitemap</h3>
+            <dl>
+                <dt><a href="home.html">Home</a></dt>
+                <dt><a href="library.html">Exercise Library</a></dt>
+            </dl>
+        </div>
+
+        <div class="breadcrumbs">
+            <a href="home.html">Home</a> >
+            <a href="library.html">Exercise Library</a>
+        </div>
+
+    </body>
+
+</html>

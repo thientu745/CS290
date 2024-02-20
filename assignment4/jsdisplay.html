@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Assignment 4 Javacript</title>
+        <script>
+            var username;
+            var age;
+            var hobby1;
+            var hobby2;
+            var hobby3;
+
+            var userInput;
+            var userInput2;
+            var sum;
+
+            function getName() {
+                username = document.getElementById('username').value;
+                document.getElementById('user').innerText = "Hi " + username + "!";
+            }
+
+            function getAge() {
+                age = document.getElementById('age').value;
+            }
+
+            function checkAge() {
+
+                var person = {
+                    name: username,
+                    age: parseInt(age, 10),
+                    hobbies: [hobby1, hobby2, hobby3]
+                }
+
+                if (person.age < 21) {
+                    document.getElementById('legal').innerText = "It is not legal for you to drink.";
+                } else {
+                    document.getElementById('legal').innerText = "It is legal for you to drink.";
+                }
+
+            }
+
+            function printHobbies() {
+
+                var person = {
+                    name: username,
+                    age: parseInt(age, 10),
+                    hobbies: [hobby1, hobby2, hobby3]
+                }
+
+                var hobbyList = []
+
+                for (var i = 0; i < person.hobbies.length; i++) {
+                   hobbyList.push(person.hobbies[i]);
+                }
+
+                var hobbiesString = hobbyList.join(', ');
+
+                document.getElementById('hobbies').innerText = 'Hobbies: ' + hobbiesString;
+            }
+
+            function getHobby1() {
+                hobby1 = document.getElementById('hobby1').value;
+            }
+
+            function getHobby2() {
+                hobby2 = document.getElementById('hobby2').value;
+            }
+
+            function getHobby3() {
+                hobby3 = document.getElementById('hobby3').value;
+            }
+
+            function getInput() {
+                userInput = document.getElementById('userInput').value;
+                document.getElementById('userOutput').innerText = 'First number: ' + userInput;
+            }
+
+            function getInput2() {
+                userInput2 = document.getElementById('userInput2').value;
+                document.getElementById('userOutput2').innerText = 'Second number: ' + userInput2;
+            }
+
+            function performAddition() {
+                var num1 = parseInt(userInput, 10);
+                var num2 = parseInt(userInput2, 10);
+                var sameNum;
+                sum = num1 + num2;
+                if (num1 == num2) {
+                    sameNum = 'Number 1 and Number 2 are the same number!'
+                }
+                document.getElementById('sum').innerText = 'Sum: ' + sum + '\n' + sameNum;
+            }
+            
+        </script>
+    </head>
+
+    <body>
+
+        <label for="username">Enter your username: </label>
+        <input type="text" id="username" name="username" oninput="getName()">
+        <p id="user"></p>
+
+        <label for="age">Enter your age: </label>
+        <input type="number" id="age" name="age" oninput="getAge()">
+
+        <button onclick="checkAge()">Is it legal for me to drink alcohol?</button>
+        <p id="legal"></p>
+
+        <label for="hobby1">Enter a hobby you have: </label>
+        <input type="text" id="hobby1" name="hobby1" oninput="getHobby1()">
+
+        <br><br>
+
+        <label for="hobby2">Enter a hobby you have: </label>
+        <input type="text" id="hobby2" name="hobby2" oninput="getHobby2()">
+
+        <br><br>
+
+        <label for="hobby3">Enter a hobby you have: </label>
+        <input type="text" id="hobby3" name="hobby3" oninput="getHobby3()">
+
+        <br>
+
+        <button onclick="printHobbies()">Print Hobbies</button>
+        <p id="hobbies"></p>
+
+
+        <label for="userInput">Enter a number: </label>
+        <input type="number" id="userInput" name="userInput" oninput="getInput()">
+        <p id="userOutput"></p>
+
+        <label for="userInput2">Enter another number: </label>
+        <input type="number" id="userInput2" name="userInput2" oninput="getInput2()">
+        <p id="userOutput2"></p>
+
+        <button onclick="performAddition()">Add Numbers</button>
+        <p id="sum"></p>
+
+
+    </body>
+
+</html>

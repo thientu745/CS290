@@ -1,0 +1,1 @@
+The design for a web app that could be useful is an application that allows a user to compare features of a car. This includes price, gas mileage, year built, horsepower, torque, reliability rating, etc.. This would help users simplify the process of purchasing a car, which can oftentimes be a daunting and overwhelming task for the average consumer.

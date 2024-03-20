@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Registration</title>
+</head>
+<body>
+    <h1>User Registration</h1>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        <p>{{ form.username.label }}<br>{{ form.username }}</p>
+        <p>{{ form.email.label }}<br>{{ form.email }}</p>
+        <p>{{ form.submit }}</p>
+    </form>
+</body>
+</html>

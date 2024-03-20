@@ -1,3 +1,6 @@
 A design for a web application that I would use is a website that helps a user narrow down choices of where to get food. Too often do my friends and I spend too much time to choose where to get food when we're hanging out.
 This web app could be a solution to this, letting you filter by what's open at what time, type of cuisine, price range, calories/macros (protein, carbs, fat, etc.), and more. This would greatly reduce the amount of bickering
 that happens when we decide where to eat. This website might have to call the Google Maps API to help with functionalities.
+
+
+There might be some additional steps needed to run the programs in this assignment. First, you need to ensure Flask is installed. You can do this by typing "pip install flask" into the terminal. You also need to make sure that both Flask-WTF and Flask-SQLAlchemy are installed. You can do this my typing "pip install Flask-WTF Flask-SQLAlchemy" into the terminal. To run the first program with just Flask, type and enter "python app.py" into the terminal. Then, you can either go to http://localhost:5000/ or click the link in the terminal to get to the website. To get to the second site, you need to do "cd WTForms". Then, you can enter "python app2.py" into the terminal, then either go to http://localhost:5000/ or click the link in the terminal to get to the website.

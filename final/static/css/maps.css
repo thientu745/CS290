@@ -1,0 +1,84 @@
+#top {
+    font-size: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-variant:small-caps;
+    line-height: 2;
+    color: #38023B;
+    background-image: url('/static/img/buffbrain.jpg');
+    width: 100%;
+    height: 250px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.center {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.about {
+    text-align: center;
+}
+
+.h2 {
+    font-size: 30px;
+    text-align: center;
+    font-style: italic;
+    font-weight: normal;
+}
+
+.h3 {
+    font: bold 25px 'Arial', sans-serif;
+    text-align: center;
+    text-decoration: underline;
+}
+
+[role="link"] {
+    color: #38023B;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #E6E6FA;
+}
+
+table {
+    border: 1px solid;
+    background-color: #F4FDFF;
+}
+
+img {
+    margin: 20px;
+}
+
+tr {
+    padding: 5px;
+}
+
+td {
+    padding: 5px;
+}
+
+iframe {
+    margin: 30px;
+}
+
+.breadcrumbs {
+    position: absolute;
+    top: 0%;
+    width: 200px;
+    float: left;
+}
+
+#map {
+    height: 400px; /* Set the height of the map container */
+    width: 100%;
+}

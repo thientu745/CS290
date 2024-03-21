@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="calc.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/calc.css') }}">
+    </head>
+
+    <body>
+        <h1 id="top">Gym Genius</h1>
+       
+        <h3 class="h3">BMI Calculator</h3>
+        <label for="weight">Enter your weight (lbs): </label>
+        <input type="number" id="weight" name="weight" oninput="getWeight()">
+        <br><br>
+        <label for="height">Enter your height (in): </label>
+        <input type="number" id="height" name="height" oninput="getHeight()">
+        <br><br>
+
+        <button onclick="calcBMI()">Calculate BMI</button>
+        <p id="bmi"></p>
+
+        <button onclick="calcHealthy()">What does my BMI Mean?</button>
+        <p id="healthy"></p>
+        <br><br>
+
+        <p>
+            BMI Disclaimer:
+            Body Mass Index (BMI) is a commonly used tool for estimating body fat based on weight and height measurements. While BMI can provide a general 
+            indication of weight status, it may not always accurately represent an individual's health or body composition.
+        </p>
+        <br><br>
+
+        <h3 class="h3">Calorie Tracker</h3>
+        <label for="foodName">Food Name:</label>
+        <input type="text" id="foodName">
+        <br><br>
+
+        <label for="calories">Calories:</label>
+        <input type="number" id="calories">
+        <br><br>
+        
+        <button onclick="trackCalories()">Track</button>
+        
+        <h2>Tracked Calories:</h2>
+        <ul id="trackedList"></ul>
+
+        <br><br>
+        <a href="#top" role="link">Back to Top</a>
+
+        <div class="breadcrumbs">
+            <a href="/">Home</a> >
+            <a href="/calc">Gym Calculations</a>
+        </div>
+
+    </body>
+
+</html>

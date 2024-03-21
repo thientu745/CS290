@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/popular.css') }}">
+    </head>
+
+    <body>
+        <h1 id="top">Gym Genius</h1>
+        
+        <h3 class="h3">Popular Exercises</h3>
+        <ol>
+            <li>Bench Press</li>
+            <img src="{{ url_for('static', filename='img/benchpress.jpg') }}" alt="Diagram of bench press form" width="296" height="296">
+            <p>The bench press is a compound exercise primarily targeting the chest, shoulders, and triceps. Lie on a flat bench 
+                with feet planted, grip the barbell slightly wider than shoulder-width, and lower it towards the chest while keeping elbows at a 45-degree angle. Press 
+                the barbell back up explosively, exhaling as you do so. Maintain a neutral spine, use a spotter for safety, and vary grip width to target different areas 
+                of the chest and shoulders. Progressively overload with heavier weights over time while incorporating variations like incline or decline bench press for 
+                a well-rounded upper body workout routine.</p>
+            <li>Back Squat</li>
+            <img src="{{ url_for('static', filename='img/squat.jpeg') }}" alt="Diagram of squat form" width="400" height="263">
+            <p>
+                The back squat is a compound exercise primarily targeting the lower body, including the quadriceps, hamstrings, and glutes, along with the core and back 
+                muscles for stabilization. Begin with the barbell positioned across the back of your shoulders, resting on the upper traps or rear deltoids, and your feet 
+                shoulder-width apart. Descend by bending at the knees and hips, keeping the chest up and back straight, until the thighs are parallel to the ground or slightly below. 
+                Press through the heels to return to the starting position, maintaining proper form throughout the movement. Ensure knees track in line with toes and avoid leaning too 
+                far forward or rounding the lower back to prevent injury. Gradually increase weight while maintaining control and stability, and consider incorporating variations like 
+                front squats or split squats for overall lower body development.
+            </p>
+            <li>Deadlift</li>
+            <img src="{{ url_for('static', filename='img/deadlift.jpg') }}" alt="Diagram of deadlift form" width="450" height="296">
+            <p>
+                The deadlift is a compound exercise primarily targeting the posterior chain, including the lower back, glutes, hamstrings, and traps, along with the core muscles for 
+                stabilization. Begin by standing with feet hip-width apart, toes under the barbell. Hinge at the hips, bending knees slightly, and grip the barbell with hands shoulder-width 
+                apart, using either a conventional or sumo stance. Keep the back flat, chest up, and shoulders back as you drive through the heels, lifting the barbell off the ground until 
+                standing tall with hips fully extended. Lower the barbell back down under control, maintaining proper form and tension throughout the movement. Avoid rounding the back or 
+                jerking the weight, and engage the core to protect the spine. Gradually increase weight while maintaining proper form, and consider incorporating variations like Romanian 
+                deadlifts or trap bar deadlifts for overall strength and muscle development.
+            </p>
+            <li>Bicep Curl</li>
+            <img src="{{ url_for('static', filename='img/curl.jpg') }}" alt="Diagram of bicep curl form" width="357" height="323">
+            <p>
+                The bicep curl is an isolation exercise primarily targeting the biceps brachii muscles of the upper arms. Start by standing with feet shoulder-width apart, holding dumbbells 
+                or a barbell with an underhand grip, arms fully extended and palms facing forward. Keep your elbows close to your sides and exhale as you flex your elbows, curling the weights 
+                towards your shoulders while keeping your upper arms stationary. Contract your biceps at the top of the movement, then inhale as you lower the weights back down to the starting 
+                position, maintaining control and tension in the muscles throughout the exercise. Avoid swinging the weights or using momentum to lift the weights, and focus on squeezing the 
+                biceps at the top of the movement for maximum contraction. Gradually increase weight as you progress and consider incorporating variations like hammer curls or preacher curls to 
+                target different areas of the biceps.
+            </p>
+            <li>Tricep Extension</li>
+            <img src="{{ url_for('static', filename='img/tricepextension.jpg') }}" alt="Diagram of tricep extension form" width="400" height="439">
+            <p>
+                The tricep extension, also known as the pushdown, is an isolation exercise primarily targeting the triceps brachii muscles of the upper arms. Begin by standing with feet shoulder-width 
+                apart, holding a straight or angled bar attachment with an overhand grip, elbows close to your sides, and arms fully extended. Keep your core engaged and exhale as you press the bar 
+                downward by extending your elbows, focusing on contracting your triceps. Hold the contraction briefly at the bottom of the movement, then inhale as you return the bar to the starting 
+                position with control. Avoid leaning forward or swinging the weight, and keep your upper arms stationary throughout the exercise to isolate the triceps. Gradually increase weight as you 
+                progress and consider incorporating variations like rope pushdowns or reverse grip pushdowns for variety in your tricep training routine.
+            </p>
+        </ol>
+        <br>
+
+        <br><br>
+        <a href="#top" role="link">Back to Top</a>
+
+        <div class="breadcrumbs">
+            <a href="/">Home</a> >
+            <a href="/popular">Popular Exercises</a>
+        </div>
+    </body>
+
+</html>

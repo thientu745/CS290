@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    </head>
+
+    <body>
+        <h1 id="top">Gym Genius</h1>
+        <h2 class="h2">Welcome to Gym Genius, a library for the gym!</h2>
+        <br>
+
+        <h3 class="h3">About Gym Genius</h3>
+        <p class="about">Gym Genius is a website dedicated to providing valuable information any gym-goer, from a beginner to an expert. This website provides resources on working out,
+            such as general tips in a workout journey, how to perform particular exercises, diet, calculations for BMI, and more!
+        </p>
+        <br>
+
+        <h3 class="h3"><a href="/popular">Popular Exercises</a></h3>
+        <br>
+
+        <h3 class="h3"><a href="/faq">Frequently Asked Questions (FAQ)</a></h3>
+        <br>
+
+        <h3 class="h3"><a href="/calc">Gym Calculations</a></h3>
+        <br>
+
+        <h3 class="h3"><a href="/maps">Gyms Near Me</a></h3>
+        <br>
+
+        <h3 class="h3">Additional Resources</h3>
+        <div class="center">
+            <ul>
+                <li>Our Social Media: <a href="" role="link">Instagram</a></li>
+                <li>Our Partner Sites: <a href="https://musclewiki.com/" role="link">MuscleWiki</a></li>
+            </ul>
+        </div>
+        <br>
+
+        <h3 class="h3">Join our Newsletter!</h3>
+        <form action="/write" method="post">
+            <label for="text">Enter Your Email:</label><br>
+            <textarea id="text" name="text" rows="4" cols="50"></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+        <br>
+        <button onclick="readText()">Read Submitted Emails</button>
+        <p id="display-text"></p>
+
+        <script>
+            function readText() {
+                fetch('/read')
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById("display-text").innerText = data;
+                    });
+            }
+        </script>
+
+        <br><br>
+        <a href="#top" role="link">Back to Top</a>
+
+        <div class="breadcrumbs">
+            <a href="/">Home</a> >
+        </div>
+
+    </body>
+
+</html>
